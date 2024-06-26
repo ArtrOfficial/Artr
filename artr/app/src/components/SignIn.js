@@ -3,38 +3,38 @@ import React from 'react';
 function SignIn() {
   return (
     <div>
-      <div className="flex flex-col items-center">
-        <div>
+      <div className="flex flex-col items-center min-h-screen justify-center font-sans">
+        <div className="mb-6">
           Artr
         </div>
-        <div className="flex flex-col">
-          <label>Username or Email</label>
-          <input type="text" className="border border-customPurple rounded-lg"/>
+        <div className="flex flex-col mb-6">
+          <label className='mb-2 text-sm font-medium'>Username or Email</label>
+          <input type="text" className="border border-customPurple rounded-lg w-80"/>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col mb-5">
           <div className='flex'>
-            <label>
+            <label className='mr-auto text-sm font-medium'>
               Password
             </label>
-            <div className="text-customPurple underline text-xs">
+            <button className="text-customPurple underline text-xs font-medium ml-auto">
               Forgot Password?
-            </div>
+            </button>
           </div>
-          <input type="text" className="border border-customPurple rounded-lg"/>
+          <input type="password" className="border border-customPurple rounded-lg w-80"/>
         </div>
-        <button className="bg-customPurple text-white rounded-xl w-20">
+        <button className="bg-customPurple text-white rounded-2xl w-20 mb-4 font-semibold text-sm p-1">
           Login
         </button>
-        <div>
+        <div className='mb-4 text-sm font-medium'>
           Or
         </div>
-        <div className="border border-customPurple rounded-lg">
+        <button className="flex justify-center border-2 border-customPurple rounded-3xl w-80 mb-14 text-sm font-medium py-2">
           Sign in with Google
-        </div>
-        <div>
+        </button>
+        <div className='text-xl font-medium mb-3'>
           New to Artr?
         </div>
-        <button className='bg-customPurple text-white rounded-xl w-20'>
+        <button className='bg-customPurple text-white rounded-2xl w-20 font-semibold text-sm py-1.5 px-2.5 shadow-lightPurple'>
           Sign Up
         </button>
       </div>

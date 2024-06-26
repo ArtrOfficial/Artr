@@ -13,6 +13,10 @@ module.exports = {
       },
       colors: {
         customPurple: '#564592',
+        lightPurple: '#724CF9',
+      },
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
       },
     },
   },
