@@ -9,8 +9,8 @@ function SignUp() {
   const [currentStep, setCurrentStep] = useState(1);
 
   return (
-    <div className="flex flex-col items-center mt-24">
-      <div className='font-sans text-base font-medium mb-6'>
+    <div className="flex flex-col items-center min-h-screen">
+      <div className='font-sans text-base font-medium mb-6  mt-24'>
         Create new Artr Account
       </div>
       <ProgressBar currentStep={currentStep} />
@@ -30,7 +30,7 @@ function SignUp() {
           Next
         </button>
       </div>
-      <Footer />
+      {/* <Footer/> */}
     </div>
   );
 }
