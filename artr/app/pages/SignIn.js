@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function SignIn() {
   return (
@@ -34,9 +35,9 @@ function SignIn() {
         <div className='text-xl font-medium mb-3'>
           New to Artr?
         </div>
-        <button className='bg-customPurple text-white rounded-2xl w-20 font-semibold text-sm py-1.5 px-2.5 shadow-lightPurple'>
-          Sign Up
-        </button>
+        <Link href="/SignUp" className='bg-customPurple text-white rounded-2xl w-20 font-semibold text-sm py-1.5 px-2.5 shadow-lightPurple text-center'>
+            Sign Up
+        </Link>
       </div>
     </div>
   );

@@ -1,10 +1,11 @@
-// import Image from "next/image";
-import SignIn from "./src/components/SignIn";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 export default function Home() {
   return (
     <div>
-      <SignIn />
+      {/* <SignIn /> */}
+      <SignUp />
     </div>
   );
 }
