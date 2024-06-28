@@ -30,8 +30,46 @@ function SignUp() {
         )}
         
         {currentStep === 2 && (
-          <div>
+          <div className='flex flex-col'>
+            <div className='flex text-sm mb-2'>
+              <div className='mr-1'>
+                Email
+              </div>
+              <div className='bg-gray rounded-2xl w-5'>
+                i
+              </div>
+            </div>
+            <input type="text" className='border border-customPurple rounded-2xl w-80' />
+            <div className='flex text-sm mb-2 mt-4'>
+              <div className='mr-1'>
+                Birthday
+              </div>
+              <div className='bg-gray rounded-2xl w-5'>
+                i
+              </div>
+            </div>
+            <div className='flex'>
+              <div className='flex flex-col'>
+                <div className='text-sm'>
+                  MM
+                </div>
+                <input type="number" className='border border-customPurple rounded-xl w-10' />
+              </div>
+              
+              <div className='flex flex-col'>
+                <div className='text-sm'>
+                  DD
+                </div>
+                <input type="number" className='border border-customPurple rounded-xl w-10' />
+              </div>
 
+              <div className='flex flex-col'>
+                <div className='text-sm'>
+                  YYYY
+                </div>
+                <input type="number" className='border border-customPurple rounded-xl w-20' />
+              </div>
+            </div>
           </div>
         )}
 

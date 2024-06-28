@@ -15,6 +15,7 @@ module.exports = {
         customPurple: '#564592',
         lightPurple: '#724CF9',
         lilac: '#EAE8FF',
+        gray: '#D9D9D9',
       },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
