@@ -11,6 +11,17 @@ function SignUp() {
     setCurrentStep((prevStep) => Math.min(prevStep + 1, 5));
   };
 
+  const handleBirthdayChange = (e) => {
+    const { name, value } = e.target;
+    if (name === 'month' && value.length <= 2) {
+      setBirthday({ ...birthday, month: value });
+    } else if (name === 'day' && value.length <= 2) {
+      setBirthday({ ...birthday, day: value });
+    } else if (name === 'year' && value.length <= 4) {
+      setBirthday({ ...birthday, year: value });
+    }
+  };
+
   return (
     <div className="flex flex-col items-center min-h-screen">
       <div className='font-sans text-base font-medium mb-6  mt-24'>
@@ -49,33 +60,33 @@ function SignUp() {
               </div>
             </div>
             <div className='flex'>
-              <div className='flex flex-col'>
+              <div className='flex flex-col mr-2'>
                 <div className='text-sm'>
                   MM
                 </div>
-                <input type="number" className='border border-customPurple rounded-xl w-10' />
+                <input type="text" className='border border-customPurple rounded-xl w-10' />
               </div>
               
-              <div className='flex flex-col'>
+              <div className='flex flex-col mr-2'>
                 <div className='text-sm'>
                   DD
                 </div>
-                <input type="number" className='border border-customPurple rounded-xl w-10' />
+                <input type="text" className='border border-customPurple rounded-xl w-10' />
               </div>
 
               <div className='flex flex-col'>
                 <div className='text-sm'>
                   YYYY
                 </div>
-                <input type="number" className='border border-customPurple rounded-xl w-20' />
+                <input type="text" className='border border-customPurple rounded-xl w-20' />
               </div>
             </div>
           </div>
         )}
 
         {currentStep === 3 && (
-          <div>
-
+          <div className='flex flex-col'>
+            
           </div>
         )}
 
