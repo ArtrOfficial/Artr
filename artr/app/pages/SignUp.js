@@ -24,13 +24,13 @@ function SignUp() {
 
   return (
     <div className="flex flex-col items-center min-h-screen">
-      <div className='font-sans text-base font-medium mb-6  mt-24'>
+      <div className='font-sans text-base font-medium mb-6 mt-20'>
         Create new Artr Account
       </div>
       <ProgressBar currentStep={currentStep} />
-      <div className='font-sans text-medium font-medium text-center text-lg'>
+      <div className='font-sans text-medium font-medium text-lg'>
         {currentStep === 1 && (
-          <div className='flex'>
+          <div className='flex text-center'>
             <div className='bg-lilac w-52 h-48 rounded-xl mr-6'>
               <div className='mt-2'>General Account</div>
             </div>
@@ -41,7 +41,7 @@ function SignUp() {
         )}
         
         {currentStep === 2 && (
-          <div className='flex flex-col'>
+          <div className='flex flex-col text-center'>
             <div className='flex text-sm mb-2'>
               <div className='mr-1'>
                 Email
@@ -85,8 +85,30 @@ function SignUp() {
         )}
 
         {currentStep === 3 && (
-          <div className='flex flex-col'>
-            
+          <div className='flex flex-col font-sans text-sm'>
+            <div className='mb-2'>
+              Artr ID
+            </div>
+            <input type="text" className='mb-4 border border-customPurple rounded-2xl w-80 h-7'/>
+            <div className='mb-2'>
+              Display Name
+            </div>
+            <input type="text" className='mb-4 border border-customPurple rounded-2xl w-80 h-7'/>
+            <div className='mb-2'>
+              Password
+            </div>
+            <input type="password" className='mb-4 border border-customPurple rounded-2xl w-80 h-7'/>
+            <div className='text-xs mb-4'>
+              Password must contain:
+              <ul className='list-disc list-inside'>
+                <li>at least 8 characters</li>
+                <li>no special characters other than</li>
+              </ul>
+            </div>
+            <div className='mb-2'>
+              Confirm Password
+            </div>
+            <input type="password" className='border border-customPurple rounded-2xl w-80 h-7'/>
           </div>
         )}
 
