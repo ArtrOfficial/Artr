@@ -113,8 +113,20 @@ function SignUp() {
         )}
 
         {currentStep === 4 && (
-          <div>
-
+          <div className='flex flex-col'>
+            <div className='font-sans text-base'>
+              ArtrSpace Terms and Conditions
+            </div>
+            <div className='border border-customPurple w-[450px] h-56 rounded-lg'></div>
+            <div className='flex mt-4'>
+              <input 
+                type="checkbox"
+                className='w-5 h-5 rounded-md border border-customPurple'
+              />
+              <div className='text-sm ml-2'>
+                I have read the ArtrSpace Terms and Service and I agree.
+              </div>
+            </div>
           </div>
         )}
 
