@@ -25,9 +25,9 @@ function SignUp() {
   return (
     <div className="flex flex-col items-center min-h-screen">
       <div className='montserrat-med text-base mb-6 mt-20'>
-        Create new Artr Account
+        {currentStep < 5 && <div>Create new Artr Account</div>}
       </div>
-      <ProgressBar currentStep={currentStep} />
+      {currentStep < 5 && <ProgressBar currentStep={currentStep} />}
       <div className='montserrat-med text-base'>
         {currentStep === 1 && (
           <div className='flex text-center'>
@@ -131,19 +131,37 @@ function SignUp() {
         )}
 
         {currentStep === 5 && (
-          <div>
-
+          <div className='flex flex-col w-screen'>
+            <div className='flex flex-col mx-auto w-11/12'>
+              <div className='poppins-semibold text-xl'>
+                Profile
+              </div>
+              <hr className='w-full' />
+            </div>
+            <div className='flex mx-auto w-11/12'>
+              <div className='poppins-med mr-52'>
+                Profile Picture
+              </div>
+              <div className='poppins-med'>
+                Profile Banner
+              </div>
+            </div>
           </div>
         )}
         
       </div>
       <div className='flex mt-10 poppins-reg'>
-        <button className='underline text-customPurple text-sm mr-6'>
-          Cancel
-        </button>
-        <button className='text-sm bg-customPurple text-white rounded-xl w-16 h-6 ml-6' onClick={handleNext}>
-          Next
-        </button>
+        {currentStep < 5 && (
+          <div>
+            <button className='underline text-customPurple text-sm mr-6'>
+              Cancel
+            </button>
+            <button className='text-sm bg-customPurple text-white rounded-xl w-16 h-6 ml-6' onClick={handleNext}>
+              Next
+            </button>
+          </div>
+        )}
+
       </div>
       {/* <Footer/> */}
     </div>
