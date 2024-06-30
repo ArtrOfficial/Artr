@@ -24,11 +24,11 @@ function SignUp() {
 
   return (
     <div className="flex flex-col items-center min-h-screen">
-      <div className='font-sans text-base font-medium mb-6 mt-20'>
+      <div className='montserrat-med text-base mb-6 mt-20'>
         Create new Artr Account
       </div>
       <ProgressBar currentStep={currentStep} />
-      <div className='font-sans text-medium font-medium text-lg'>
+      <div className='montserrat-med text-base'>
         {currentStep === 1 && (
           <div className='flex text-center'>
             <div className='bg-lilac w-52 h-48 rounded-xl mr-6'>
@@ -42,7 +42,7 @@ function SignUp() {
         
         {currentStep === 2 && (
           <div className='flex flex-col text-center'>
-            <div className='flex text-sm mb-2'>
+            <div className='flex text-sm mb-2 inter-med'>
               <div className='mr-1'>
                 Email
               </div>
@@ -51,7 +51,7 @@ function SignUp() {
               </div>
             </div>
             <input type="text" className='border border-customPurple rounded-2xl w-80' />
-            <div className='flex text-sm mb-2 mt-4'>
+            <div className='flex text-sm mb-2 mt-4 inter-med'>
               <div className='mr-1'>
                 Birthday
               </div>
@@ -59,23 +59,23 @@ function SignUp() {
                 i
               </div>
             </div>
-            <div className='flex'>
+            <div className='flex poppins-reg'>
               <div className='flex flex-col mr-2'>
-                <div className='text-sm'>
+                <div className='text-xs'>
                   MM
                 </div>
                 <input type="text" className='border border-customPurple rounded-xl w-10' />
               </div>
               
               <div className='flex flex-col mr-2'>
-                <div className='text-sm'>
+                <div className='text-xs'>
                   DD
                 </div>
                 <input type="text" className='border border-customPurple rounded-xl w-10' />
               </div>
 
               <div className='flex flex-col'>
-                <div className='text-sm'>
+                <div className='text-xs'>
                   YYYY
                 </div>
                 <input type="text" className='border border-customPurple rounded-xl w-20' />
@@ -85,7 +85,7 @@ function SignUp() {
         )}
 
         {currentStep === 3 && (
-          <div className='flex flex-col font-sans text-sm'>
+          <div className='flex flex-col inter-med text-sm'>
             <div className='mb-2'>
               Artr ID
             </div>
@@ -114,7 +114,7 @@ function SignUp() {
 
         {currentStep === 4 && (
           <div className='flex flex-col'>
-            <div className='font-sans text-base'>
+            <div className='inter-med text-base'>
               ArtrSpace Terms and Conditions
             </div>
             <div className='border border-customPurple w-[450px] h-56 rounded-lg'></div>
@@ -123,7 +123,7 @@ function SignUp() {
                 type="checkbox"
                 className='w-5 h-5 rounded-md border border-customPurple'
               />
-              <div className='text-sm ml-2'>
+              <div className='text-sm poppins-reg ml-2'>
                 I have read the ArtrSpace Terms and Service and I agree.
               </div>
             </div>
@@ -137,7 +137,7 @@ function SignUp() {
         )}
         
       </div>
-      <div className='flex mt-10'>
+      <div className='flex mt-10 poppins-reg'>
         <button className='underline text-customPurple text-sm mr-6'>
           Cancel
         </button>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 function SignIn() {
   return (
     <div>
-      <div className="flex flex-col items-center min-h-screen justify-center font-sans">
+      <div className="flex flex-col items-center min-h-screen justify-center montserrat-med">
         <div className="mb-6">
           Artr
         </div>
@@ -23,7 +23,7 @@ function SignIn() {
           </div>
           <input type="password" className="border border-customPurple rounded-lg w-80"/>
         </div>
-        <button className="bg-customPurple text-white rounded-2xl w-20 mb-4 font-semibold text-sm p-1">
+        <button className="bg-customPurple text-white rounded-2xl w-20 mb-4 montserrat-semibold text-sm p-1">
           Login
         </button>
         <div className='mb-4 text-sm font-medium'>
@@ -35,7 +35,7 @@ function SignIn() {
         <div className='text-xl font-medium mb-3'>
           New to Artr?
         </div>
-        <Link href="/SignUp" className='bg-customPurple text-white rounded-2xl w-20 font-semibold text-sm py-1.5 px-2.5 shadow-lightPurple text-center'>
+        <Link href="/SignUp" className='bg-customPurple text-white rounded-2xl w-20 poppins-semibold text-sm py-1.5 px-2.5 shadow-lightPurple text-center'>
             Sign Up
         </Link>
       </div>

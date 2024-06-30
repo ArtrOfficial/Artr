@@ -10,7 +10,7 @@ function ProgressBar({ currentStep }) {
           <div key={index} className="relative flex flex-col items-center">
             <div className="flex items-center">
               <div
-                className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${
+                className={`w-10 h-10 rounded-full flex items-center justify-center montserrat-med ${
                   currentStep >= step ? 'bg-lilac text-customPurple' : 'bg-gray text-darkGray'
                 }`}
               >
@@ -28,29 +28,29 @@ function ProgressBar({ currentStep }) {
               )}
             </div>
             {step === 1 && (
-              <div className="mt-2 text-sm font-sans font-medium text-center">
+              <div className="mt-2 text-sm inter-med text-center">
                 Account Type
               </div>
             )}
             {step === 2 && (
-              <div className="mt-2 text-sm font-sans font-medium text-center">
+              <div className="mt-2 text-sm inter-med text-center">
                 Personal 
                 <br/>
                 Information
               </div>
             )}
             {step === 3 && (
-              <div className="mt-2 text-sm font-sans font-medium text-center">
+              <div className="mt-2 text-sm inter-med text-center">
                 Artr Account
               </div>
             )}
             {step === 4 && (
-              <div className="mt-2 text-sm font-sans font-medium text-center">
+              <div className="mt-2 text-sm inter-med text-center">
                 Terms & Services
               </div>
             )}
             {step === 5 && (
-              <div className="mt-2 text-sm font-sans font-medium text-center">
+              <div className="mt-2 text-sm inter-med text-center">
                 Start
               </div>
             )}
