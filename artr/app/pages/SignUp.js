@@ -133,18 +133,130 @@ function SignUp() {
         {currentStep === 5 && (
           <div className='flex flex-col w-screen'>
             <div className='flex flex-col mx-auto w-11/12'>
-              <div className='poppins-semibold text-xl'>
+              <div className='poppins-semibold text-2xl'>
                 Profile
               </div>
               <hr className='w-full' />
             </div>
-            <div className='flex mx-auto w-11/12'>
+            <div className='flex mx-auto w-11/12 mt-8'>
               <div className='poppins-med mr-52'>
                 Profile Picture
               </div>
               <div className='poppins-med'>
                 Profile Banner
               </div>
+            </div>
+            <div className='flex mx-auto w-11/12 mt-4'>
+              <div className='border w-36 h-36 rounded-full flex items-center justify-center mr-44'>
+                <button className='flex border-2 border-customPurple rounded-xl poppins-reg text-sm text-customPurple underline items-center justify-center px-2'>
+                  Upload New
+                </button>
+              </div>
+              <div className='border w-7/12 h-36 rounded-xl flex items-center justify-center'>
+                <button className='flex border-2 border-customPurple rounded-xl poppins-reg text-sm text-customPurple underline items-center justify-center px-2'>
+                  Upload New
+                </button>
+              </div>
+            </div>
+            <div className='flex flex-col mx-auto w-11/12 mt-14'>
+              <div className='poppins-med'>
+                Description (Max 300 Characters)
+              </div>
+              <textarea 
+                className='border rounded-xl w-10/12 h-52 mt-4'
+                maxLength={300}
+              />
+            </div>
+
+            <div className='flex flex-col mx-auto w-11/12 mt-11'>
+              <div className='poppins-med'>
+                Social Media Links
+              </div>
+              <div className='ml-5 mt-4'>
+                <div className='flex'>
+                  <div className='montserrat-reg w-32'>
+                    Instagram
+                  </div>
+                  <input 
+                    type="text"
+                    className='border rounded-lg w-80'
+                  />
+                </div>
+                <div className='flex mt-4'>
+                  <div className='montserrat-reg w-32'>
+                    Kofi
+                  </div>
+                  <input 
+                    type="text"
+                    className='border rounded-lg w-80'
+                  />
+                </div>
+                <div className='flex mt-4'>
+                  <div className='montserrat-reg w-32'>
+                    Patreon
+                  </div>
+                  <input 
+                    type="text"
+                    className='border rounded-lg w-80'
+                  />
+                </div>
+                <div className='flex mt-4'>
+                  <div className='montserrat-reg w-32'>
+                    Personal Site
+                  </div>
+                  <input 
+                    type="text"
+                    className='border rounded-lg w-80'
+                  />
+                </div>
+                <div className='flex mt-4'>
+                  <div className='montserrat-reg w-32'>
+                    TikTok
+                  </div>
+                  <input 
+                    type="text"
+                    className='border rounded-lg w-80'
+                  />
+                </div>
+                <div className='flex mt-4'>
+                  <div className='montserrat-reg w-32'>
+                    Twitter
+                  </div>
+                  <input 
+                    type="text"
+                    className='border rounded-lg w-80'
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className='flex flex-col mx-auto w-11/12 mt-11'>
+              <div className='poppins-semibold text-2xl'>
+                Commission Menu
+              </div>
+              <hr />
+              <div className='flex items-center justify-center w-72 h-52 mt-12 shadow-custom-lg'>
+                <div className='flex border-2 border-customPurple rounded-xl poppins-reg text-sm text-customPurple underline items-center justify-center px-2 w-28'>
+                  Upload New
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col mx-auto w-11/12 mt-16'>
+              <div className='poppins-semibold text-2xl'>
+                Commission Gallery
+              </div>
+              <hr />
+              <div className='flex items-center justify-center w-72 h-52 mt-12 shadow-custom-lg'>
+                <div className='flex border-2 border-customPurple rounded-xl poppins-reg text-sm text-customPurple underline items-center justify-center px-2 w-28'>
+                  Upload New
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col mx-auto w-11/12 mt-16'>
+              <div className='poppins-semibold text-2xl'>
+                FAQs
+              </div>
+              <hr />
             </div>
           </div>
         )}

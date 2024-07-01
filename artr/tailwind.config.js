@@ -23,6 +23,9 @@ module.exports = {
         poppins: ['Poppins', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
       },
+      boxShadow: {
+        'custom-lg': '0 4px 10px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.1)',
+      },
     },
   },
   plugins: [],
