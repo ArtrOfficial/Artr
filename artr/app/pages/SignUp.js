@@ -257,6 +257,46 @@ function SignUp() {
                 FAQs
               </div>
               <hr />
+              <div className='flex items-center'>
+                ||
+                <div className='flex flex-col'>
+                  <div className='montserrat-reg'>
+                    Question
+                  </div>
+                  <input 
+                    type="text"
+                    className='border w-full rounded-lg'
+                  />
+
+                  <div className='montserrat-reg'>
+                    Answer
+                  </div>
+                  <input 
+                    type="text"
+                    className='border w-full rounded-lg'
+                  />
+                </div>
+              </div>
+              <div className='flex items-center'>
+                ||
+                <div className='flex flex-col'>
+                  <div className='montserrat-reg'>
+                    Question
+                  </div>
+                  <input 
+                    type="text"
+                    className='border w-full rounded-lg'
+                  />
+
+                  <div className='montserrat-reg'>
+                    Answer
+                  </div>
+                  <input 
+                    type="text"
+                    className='border w-full rounded-lg'
+                  />
+                </div>
+              </div>
             </div>
           </div>
         )}
