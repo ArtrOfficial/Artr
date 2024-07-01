@@ -133,8 +133,13 @@ function SignUp() {
         {currentStep === 5 && (
           <div className='flex flex-col w-screen'>
             <div className='flex flex-col mx-auto w-11/12'>
-              <div className='poppins-semibold text-2xl'>
-                Profile
+              <div className='flex items-center'>
+                <div className='poppins-semibold text-2xl mb-2 mr-auto'>
+                  Profile
+                </div>
+                <button className='inter-med text-xs text-customPurple ml-auto'>
+                  skip for now
+                </button>
               </div>
               <hr className='w-full' />
             </div>
@@ -231,7 +236,7 @@ function SignUp() {
             </div>
 
             <div className='flex flex-col mx-auto w-11/12 mt-11'>
-              <div className='poppins-semibold text-2xl'>
+              <div className='poppins-semibold text-2xl mb-2'>
                 Commission Menu
               </div>
               <hr />
@@ -242,7 +247,7 @@ function SignUp() {
               </div>
             </div>
             <div className='flex flex-col mx-auto w-11/12 mt-16'>
-              <div className='poppins-semibold text-2xl'>
+              <div className='poppins-semibold text-2xl mb-2'>
                 Commission Gallery
               </div>
               <hr />
@@ -253,49 +258,69 @@ function SignUp() {
               </div>
             </div>
             <div className='flex flex-col mx-auto w-11/12 mt-16'>
-              <div className='poppins-semibold text-2xl'>
+              <div className='poppins-semibold text-2xl mb-2'>
                 FAQs
               </div>
               <hr />
-              <div className='flex items-center'>
-                ||
-                <div className='flex flex-col'>
-                  <div className='montserrat-reg'>
+              <div className='flex items-center mt-4'>
+                <svg className='mr-1' height="30" width="2">
+                  <line x1="0" y1="0" x2="0" y2="100" style={{stroke:'black', strokeWidth:2}} />
+                </svg>
+                <svg className='mr-6' height="30" width="2">
+                  <line x1="0" y1="0" x2="0" y2="100" style={{stroke:'black', strokeWidth:2}} />
+                </svg>
+                <div className='flex flex-col w-full'>
+                  <div className='montserrat-reg mb-1'>
                     Question
                   </div>
                   <input 
                     type="text"
-                    className='border w-full rounded-lg'
+                    className='border w-full rounded-lg h-8'
                   />
 
-                  <div className='montserrat-reg'>
+                  <div className='montserrat-reg mt-2 mb-1'>
                     Answer
                   </div>
                   <input 
                     type="text"
-                    className='border w-full rounded-lg'
+                    className='border w-full rounded-lg h-8'
                   />
                 </div>
               </div>
-              <div className='flex items-center'>
-                ||
-                <div className='flex flex-col'>
-                  <div className='montserrat-reg'>
+              <div className='flex items-center mt-6 w-full'>
+                <svg className='mr-1' height="30" width="2">
+                  <line x1="0" y1="0" x2="0" y2="100" style={{stroke:'black', strokeWidth:2}} />
+                </svg>
+                <svg className='mr-6' height="30" width="2">
+                  <line x1="0" y1="0" x2="0" y2="100" style={{stroke:'black', strokeWidth:2}} />
+                </svg>
+                <div className='flex flex-col w-full'>
+                  <div className='montserrat-reg mb-1'>
                     Question
                   </div>
                   <input 
                     type="text"
-                    className='border w-full rounded-lg'
+                    className='border w-full rounded-lg h-8'
                   />
 
-                  <div className='montserrat-reg'>
+                  <div className='montserrat-reg mt-2 mb-1'>
                     Answer
                   </div>
                   <input 
                     type="text"
-                    className='border w-full rounded-lg'
+                    className='border w-full rounded-lg h-8'
                   />
                 </div>
+              </div>
+              <div className='flex items-center justify-center mt-6'>
+                <button className='border-2 border-customPurple rounded-2xl px-2 py-0.5 poppins-reg text-customPurple text-sm'>
+                  + Add a Question
+                </button>
+              </div>
+              <div className='flex justify-center'>
+                <button className='bg-customPurple poppins-reg text-white shadow-lightPurple rounded-3xl w-28 h-8 mt-28'>
+                  Finish!
+                </button>
               </div>
             </div>
           </div>
