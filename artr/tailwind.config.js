@@ -24,7 +24,7 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
       },
       boxShadow: {
-        'custom-lg': '0 4px 10px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.1)',
+        'custom-lg': '0 2px 6px rgba(86, 69, 146, 0.5), 0 2px 6px rgba(86, 69, 146, 0.5)',
       },
     },
   },

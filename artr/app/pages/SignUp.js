@@ -184,7 +184,7 @@ function SignUp() {
                   </div>
                   <input 
                     type="text"
-                    className='border rounded-lg w-80'
+                    className='border rounded-lg w-80 h-8'
                   />
                 </div>
                 <div className='flex mt-4'>
@@ -193,7 +193,7 @@ function SignUp() {
                   </div>
                   <input 
                     type="text"
-                    className='border rounded-lg w-80'
+                    className='border rounded-lg w-80 h-8'
                   />
                 </div>
                 <div className='flex mt-4'>
@@ -202,7 +202,7 @@ function SignUp() {
                   </div>
                   <input 
                     type="text"
-                    className='border rounded-lg w-80'
+                    className='border rounded-lg w-80 h-8'
                   />
                 </div>
                 <div className='flex mt-4'>
@@ -211,7 +211,7 @@ function SignUp() {
                   </div>
                   <input 
                     type="text"
-                    className='border rounded-lg w-80'
+                    className='border rounded-lg w-80 h-8'
                   />
                 </div>
                 <div className='flex mt-4'>
@@ -220,7 +220,7 @@ function SignUp() {
                   </div>
                   <input 
                     type="text"
-                    className='border rounded-lg w-80'
+                    className='border rounded-lg w-80 h-8'
                   />
                 </div>
                 <div className='flex mt-4'>
@@ -229,7 +229,7 @@ function SignUp() {
                   </div>
                   <input 
                     type="text"
-                    className='border rounded-lg w-80'
+                    className='border rounded-lg w-80 h-8'
                   />
                 </div>
               </div>
