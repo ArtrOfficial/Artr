@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import ProgressBar from '../src/components/ProgressBar';
-// import Footer from '../src/components/Footer';
+import Footer from '../src/components/Footer';
 import SignUp1 from './SignUp1';
 import SignUp2 from './SignUp2';
 import SignUp3 from './SignUp3';

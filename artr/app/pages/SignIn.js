@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Footer from '../src/components/Footer';
 
 function SignIn() {
   return (
@@ -47,7 +48,7 @@ function SignIn() {
         
       </div>
 
-      <div className='w-full'>
+      {/* <div className='w-full'>
         <div className='flex text-royalBlue items-center w-11/12 mx-auto'>
           <div className='montserrat-med text-2xl mr-auto'>
             Artr
@@ -69,7 +70,8 @@ function SignIn() {
           </div>
           
         </div>
-      </div>
+      </div> */}
+      {/* <Footer /> */}
 
     </div>
   );

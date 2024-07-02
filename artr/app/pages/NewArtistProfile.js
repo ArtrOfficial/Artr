@@ -2,7 +2,7 @@ import React from 'react';
 
 function NewArtistProfile() {
   return (
-    <div className='flex flex-col w-screen'>
+    <div className='flex flex-col w-screen mb-24'>
       <div className='flex flex-col mx-auto w-11/12'>
         <div className='flex items-center'>
           <div className='poppins-semibold text-2xl mb-2 mr-auto'>
