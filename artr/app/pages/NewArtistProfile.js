@@ -112,9 +112,9 @@ function NewArtistProfile() {
         </div>
         <hr />
         <div className='flex items-center justify-center w-72 h-52 mt-12 shadow-custom-lg'>
-          <div className='flex border-2 border-customPurple rounded-xl poppins-reg text-sm text-customPurple underline items-center justify-center px-2 w-28'>
+          <button className='flex border-2 border-customPurple rounded-xl poppins-reg text-sm text-customPurple underline items-center justify-center px-2 w-28'>
             Upload New
-          </div>
+          </button>
         </div>
       </div>
       <div className='flex flex-col mx-auto w-11/12 mt-16'>
@@ -123,9 +123,9 @@ function NewArtistProfile() {
         </div>
         <hr />
         <div className='flex items-center justify-center w-72 h-52 mt-12 shadow-custom-lg'>
-          <div className='flex border-2 border-customPurple rounded-xl poppins-reg text-sm text-customPurple underline items-center justify-center px-2 w-28'>
+          <button className='flex border-2 border-customPurple rounded-xl poppins-reg text-sm text-customPurple underline items-center justify-center px-2 w-28'>
             Upload New
-          </div>
+          </button>
         </div>
       </div>
       <div className='flex flex-col mx-auto w-11/12 mt-16'>
