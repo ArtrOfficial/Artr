@@ -9,8 +9,7 @@ import SignUp3 from './SignUp3';
 import SignUp4 from './SignUp4';
 import NewArtistProfile from './NewArtistProfile';
 
-
-const steps = ['Account Type', 'Details', 'Credentials', 'Terms', 'Profile'];
+const steps = ['Account Type', 'Personal Information', 'Artr Account', 'Terms & Services', 'Start'];
 
 function SignUp() {
   const [currentStep, setCurrentStep] = useState(1);
