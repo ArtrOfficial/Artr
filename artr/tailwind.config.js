@@ -17,6 +17,7 @@ module.exports = {
         lilac: '#EAE8FF',
         gray: '#D9D9D9',
         darkGray: '#787878',
+        royalBlue: '#4367C2',
       },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
