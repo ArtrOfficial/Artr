@@ -13,8 +13,14 @@ const steps = ['Account Type', 'Personal Information', 'Artr Account', 'Terms & 
 
 function SignUp() {
   const [currentStep, setCurrentStep] = useState(1);
+  const [isChecked, setCheckBox] = useState(false);
 
   const handleNext = () => {
+    if (currentStep === 4 && !isChecked) {
+      alert('You must agree to the terms and conditions to proceed.');
+      return;
+    }
+
     setCurrentStep((prevStep) => Math.min(prevStep + 1, 5));
   };
 
@@ -32,19 +38,30 @@ function SignUp() {
 
         {currentStep === 3 && <SignUp3 />}
 
-        {currentStep === 4 && <SignUp4 />}
+        {currentStep === 4 && <SignUp4 isChecked={isChecked} setCheckBox={setCheckBox} />}
 
         {currentStep === 5 && <NewArtistProfile />}
         
       </div>
       <div className='flex mt-10 poppins-reg'>
-        {currentStep < 5 && (
+        {currentStep < 4 && (
           <div>
             <button className='underline text-customPurple text-sm mr-6'>
               Cancel
             </button>
             <button className='text-sm bg-customPurple text-white rounded-xl w-16 h-6 ml-6' onClick={handleNext}>
               Next
+            </button>
+          </div>
+        )}
+
+        {currentStep === 4 && (
+          <div>
+            <button className='underline text-customPurple text-sm mr-6'>
+              Cancel
+            </button>
+            <button className='text-sm bg-customPurple text-white rounded-xl w-16 h-6 ml-6 shadow-lightPurple' onClick={handleNext}>
+              Start
             </button>
           </div>
         )}

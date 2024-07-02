@@ -41,7 +41,7 @@ function SignUp2() {
   };
 
   return (
-    <div className='flex flex-col text-center'>
+    <div className='flex flex-col text-center mt-12 mb-10'>
       <div className='flex text-sm mb-2 inter-med'>
         <div className='mr-1'>
           Email
@@ -55,7 +55,7 @@ function SignUp2() {
         name="email"
         value={formData.email}
         onChange={handleInputChange}
-        className='border border-customPurple rounded-2xl w-80' 
+        className='border border-customPurple rounded-2xl w-96 h-8' 
       />
       <div className='flex text-sm mb-2 mt-4 inter-med'>
         <div className='mr-1'>
@@ -75,7 +75,7 @@ function SignUp2() {
             name="month"
             value={formData.birthday.month}
             onChange={handleBirthdayChange}
-            className='border border-customPurple rounded-xl w-10' 
+            className='border border-customPurple rounded-2xl w-12 h-8' 
           />
         </div>
         
@@ -88,7 +88,7 @@ function SignUp2() {
             name="day"
             value={formData.birthday.day}
             onChange={handleBirthdayChange}
-            className='border border-customPurple rounded-xl w-10' 
+            className='border border-customPurple rounded-2xl w-12 h-8' 
           />
         </div>
 
@@ -101,7 +101,7 @@ function SignUp2() {
             name="year"
             value={formData.birthday.year}
             onChange={handleBirthdayChange}
-            className='border border-customPurple rounded-xl w-20' 
+            className='border border-customPurple rounded-2xl w-24 h-8' 
           />
         </div>
       </div>
