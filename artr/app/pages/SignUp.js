@@ -18,7 +18,6 @@ function SignUp() {
     setCurrentStep((prevStep) => Math.min(prevStep + 1, 5));
   };
 
-  
 
   return (
     <div className="flex flex-col items-center min-h-screen">

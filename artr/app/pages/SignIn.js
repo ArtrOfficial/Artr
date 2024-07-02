@@ -5,15 +5,18 @@ function SignIn() {
   return (
     <div>
       <div className="flex flex-col items-center min-h-screen justify-center montserrat-med">
-        <div className="mb-6">
+        <div className="mb-6 montserrat-med text-customPurple text-3xl">
           Artr
         </div>
         <div className="flex flex-col mb-6">
           <label className='mb-2 text-sm font-medium'>Username or Email</label>
-          <input type="text" className="border border-customPurple rounded-lg w-80"/>
+          <input 
+            type="text" 
+            className="border border-customPurple rounded-lg w-80 h-7"
+          />
         </div>
         <div className="flex flex-col mb-5">
-          <div className='flex'>
+          <div className='flex mb-2'>
             <label className='mr-auto text-sm font-medium'>
               Password
             </label>
@@ -21,7 +24,10 @@ function SignIn() {
               Forgot Password?
             </button>
           </div>
-          <input type="password" className="border border-customPurple rounded-lg w-80"/>
+          <input 
+            type="password" 
+            className="border border-customPurple rounded-lg w-80 h-7"
+          />
         </div>
         <button className="bg-customPurple text-white rounded-2xl w-20 mb-4 montserrat-semibold text-sm p-1">
           Login
