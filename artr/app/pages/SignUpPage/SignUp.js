@@ -1,8 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
-import ProgressBar from '../src/components/ProgressBar';
-import Footer from '../src/components/Footer';
+import ProgressBar from '../../components/ProgressBar';
 import SignUp1 from './SignUp1';
 import SignUp2 from './SignUp2';
 import SignUp3 from './SignUp3';
@@ -67,7 +66,6 @@ function SignUp() {
         )}
 
       </div>
-      {/* <Footer/> */}
     </div>
   );
 }

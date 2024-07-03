@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import footer_art from '../../public/footer_art.png';
 
 function Footer() {
   return (

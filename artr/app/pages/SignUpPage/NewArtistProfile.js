@@ -43,7 +43,6 @@ function NewArtistProfile() {
           maxLength={300}
         />
       </div>
-
       <div className='flex flex-col mx-auto w-11/12 mt-11'>
         <div className='poppins-med'>
           Social Media Links
@@ -105,7 +104,6 @@ function NewArtistProfile() {
           </div>
         </div>
       </div>
-
       <div className='flex flex-col mx-auto w-11/12 mt-11'>
         <div className='poppins-semibold text-2xl mb-2'>
           Commission Menu
@@ -148,7 +146,6 @@ function NewArtistProfile() {
               type="text"
               className='border w-full rounded-lg h-8'
             />
-
             <div className='montserrat-reg mt-2 mb-1'>
               Answer
             </div>
@@ -173,7 +170,6 @@ function NewArtistProfile() {
               type="text"
               className='border w-full rounded-lg h-8'
             />
-
             <div className='montserrat-reg mt-2 mb-1'>
               Answer
             </div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Footer from '../src/components/Footer';
 
 function SignIn() {
   return (
@@ -42,37 +41,10 @@ function SignIn() {
         <div className='text-xl font-medium mb-3'>
           New to Artr?
         </div>
-        <Link href="/SignUp" className='bg-customPurple text-white rounded-2xl w-20 poppins-semibold text-sm py-1.5 px-2.5 shadow-lightPurple text-center'>
+        <Link href="/pages/SignUpPage" className='bg-customPurple text-white rounded-2xl w-20 poppins-semibold text-sm py-1.5 px-2.5 shadow-lightPurple text-center'>
             Sign Up
         </Link>
-        
       </div>
-
-      {/* <div className='w-full'>
-        <div className='flex text-royalBlue items-center w-11/12 mx-auto'>
-          <div className='montserrat-med text-2xl mr-auto'>
-            Artr
-          </div>
-          <div className='flex space-x-4 sm:space-x-6 md:space-x-10 lg:space-x-28 roboto-reg text-base ml-auto'>
-            <button className='hover:underline'>Support</button>
-            <button className='hover:underline'>Help</button>
-            <button className='hover:underline'>About</button>
-            <button className='hover:underline'>Artists</button>
-            <button className='hover:underline'>Community</button>
-          </div>
-        </div>
-        <div className='text-royalBlue poppins-reg mt-4 text-xs w-full mb-6'>
-          <div className='flex items-center w-11/12 mx-auto'>
-            <div className='mr-auto'></div>
-            <button className='ml-auto hover:underline'>
-              Privacy | Terms and Services
-            </button>
-          </div>
-          
-        </div>
-      </div> */}
-      {/* <Footer /> */}
-
     </div>
   );
 }
