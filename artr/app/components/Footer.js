@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <div className='w-full relative bottom-0 left-0'>
+    <div className='w-full relative bottom-0 left-0 mt-14'>
       <div className='flex text-royalBlue items-center w-11/12 mx-auto'>
         <div className='montserrat-med text-2xl mr-auto'>
           Artr

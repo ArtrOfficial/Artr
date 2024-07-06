@@ -42,7 +42,7 @@ function SignUp() {
         {currentStep === 5 && <NewArtistProfile />}
         
       </div>
-      <div className='flex mt-10 poppins-reg'>
+      <div className='flex mt-14 poppins-reg'>
         {currentStep < 4 && (
           <div>
             <button className='underline text-customPurple text-sm mr-6'>
