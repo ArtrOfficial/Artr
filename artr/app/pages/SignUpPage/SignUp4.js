@@ -8,10 +8,17 @@ function SignUp4({ isChecked, setCheckBox }) {
 
   return (
     <div className='flex flex-col mt-6'>
-      <div className='inter-med text-base'>
+      <div className='inter-med text-base text-center md:text-start'>
         ArtrSpace Terms and Conditions
       </div>
-      <div className='border border-customPurple w-[450px] h-56 rounded-lg'></div>
+      <div className='flex justify-center'>
+        <div className='border border-customPurple md:w-[450px] w-[350px] h-56 rounded-lg'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim aliqua. Ut enim ad 
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </div>
+      </div>
       <div className='flex mt-4'>
         <input 
           type="checkbox"
