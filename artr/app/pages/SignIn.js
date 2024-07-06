@@ -14,7 +14,7 @@ function SignIn() {
             <label className='mb-2 text-sm font-medium'>Username or Email</label>
             <input 
               type="text" 
-              className="border border-customPurple rounded-lg w-80 h-7"
+              className="border border-customPurple rounded-lg w-80 h-7 pl-2"
             />
           </div>
           <div className="flex flex-col mb-5">
@@ -28,7 +28,7 @@ function SignIn() {
             </div>
             <input 
               type="password" 
-              className="border border-customPurple rounded-lg w-80 h-7"
+              className="border border-customPurple rounded-lg w-80 h-7 pl-2"
             />
           </div>
           <button className="bg-customPurple text-white rounded-2xl w-20 mb-4 montserrat-semibold text-sm p-1">

@@ -6,15 +6,15 @@ function SignUp3() {
       <div className='mb-2'>
         Artr ID
       </div>
-      <input type="text" className='mb-4 border border-customPurple md:rounded-2xl rounded-lg w-96 h-8'/>
+      <input type="text" className='mb-4 border border-customPurple md:rounded-2xl rounded-lg w-96 h-8 pl-2'/>
       <div className='mb-2'>
         Display Name
       </div>
-      <input type="text" className='mb-4 border border-customPurple md:rounded-2xl rounded-lg w-96 h-8'/>
+      <input type="text" className='mb-4 border border-customPurple md:rounded-2xl rounded-lg w-96 h-8 pl-2'/>
       <div className='mb-2'>
         Password
       </div>
-      <input type="password" className='mb-4 border border-customPurple md:rounded-2xl rounded-lg w-96 h-8'/>
+      <input type="password" className='mb-4 border border-customPurple md:rounded-2xl rounded-lg w-96 h-8 pl-2'/>
       <div className='text-xs mb-4'>
         Password must contain:
         <ul className='list-disc list-inside'>
@@ -25,7 +25,7 @@ function SignUp3() {
       <div className='mb-2'>
         Confirm Password
       </div>
-      <input type="password" className='border border-customPurple md:rounded-2xl rounded-lg w-96 h-8'/>
+      <input type="password" className='border border-customPurple md:rounded-2xl rounded-lg w-96 h-8 pl-2'/>
     </div>
   );
 }
