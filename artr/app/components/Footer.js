@@ -15,14 +15,13 @@ function Footer() {
           <button className='hover:underline'>Community</button>
         </div>
       </div>
-      <div className='text-royalBlue poppins-reg mt-4 text-xs w-full mb-6'>
+      <div className='text-royalBlue poppins-reg mt-4 text-xs w-full pb-6'>
         <div className='flex items-center w-11/12 mx-auto'>
           <div className='mr-auto'></div>
           <button className='ml-auto hover:underline'>
             Privacy | Terms and Services
           </button>
-        </div>
-        
+        </div>       
       </div>
     </div>
   );
