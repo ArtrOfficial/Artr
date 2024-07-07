@@ -28,9 +28,9 @@ function SignUp() {
   return (
     <div className="flex flex-col items-center min-h-screen">
       <div className='mb-6 mt-20'>
-        {currentStep < 5 && <div className='montserrat-med text-base'>Create new Artr Account</div>}
+        {currentStep < 6 && <div className="mb-6 montserrat-med text-customPurple text-3xl">Artr</div>}
       </div>
-      {currentStep < 5 && <ProgressBar currentStep={currentStep} steps={steps} />}
+      {currentStep < 6 && <ProgressBar currentStep={currentStep} steps={steps} />}
       <div>
         {currentStep === 1 && <SignUp1 />}
         
