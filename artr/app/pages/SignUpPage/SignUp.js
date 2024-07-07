@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProgressBar from '../../components/ProgressBar';
 import SignUp1 from './SignUp1';
 import SignUp2 from './SignUp2';
@@ -8,12 +8,14 @@ import SignUp3 from './SignUp3';
 import SignUp4 from './SignUp4';
 import SignUp5 from './SignUp5';
 import NewArtistProfile from './NewArtistProfile';
+import SmallProgressBar from '@/app/components/SmallProgressBar';
 
 const steps = ['Account Type', 'Personal Information', 'Artr Account', 'Agreements', 'Creation'];
 
 function SignUp() {
   const [currentStep, setCurrentStep] = useState(1);
   const [isChecked, setCheckBox] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const handleNext = () => {
     if (currentStep === 4 && !isChecked) {
@@ -24,13 +26,31 @@ function SignUp() {
     setCurrentStep((prevStep) => Math.min(prevStep + 1, 6));
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 768);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
   return (
     <div className="flex flex-col items-center min-h-screen">
       <div className='mb-6 mt-20'>
         {currentStep < 6 && <div className="mb-6 montserrat-med text-customPurple text-3xl">Artr</div>}
       </div>
-      {currentStep < 6 && <ProgressBar currentStep={currentStep} steps={steps} />}
+      {currentStep < 6 && (isSmallScreen ? (
+        <SmallProgressBar currentStep={currentStep} steps={steps} />
+      ) : (
+        <ProgressBar currentStep={currentStep} steps={steps} />
+      ))}
       <div>
         {currentStep === 1 && <SignUp1 />}
         
