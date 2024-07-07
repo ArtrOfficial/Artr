@@ -12,7 +12,7 @@ function SignUp4({ isChecked, setCheckBox }) {
         ArtrSpace Terms and Conditions
       </div>
       <div className='flex justify-center'>
-        <div className='border border-customPurple md:w-[450px] w-[350px] h-56 rounded-lg pl-2'>
+        <div className='border border-customPurple md:w-[450px] w-[350px] h-56 rounded-lg pl-3 pt-2'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
           incididunt ut labore et dolore magna aliqua. Ut enim ad minim aliqua. Ut enim ad 
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
