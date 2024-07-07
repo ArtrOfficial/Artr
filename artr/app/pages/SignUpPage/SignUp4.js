@@ -19,7 +19,7 @@ function SignUp4({ isChecked, setCheckBox }) {
           consequat.
         </div>
       </div>
-      <div className='flex mt-4'>
+      <div className='flex mt-4 md:w-[450px] w-[350px]'>
         <input 
           type="checkbox"
           checked={isChecked}
