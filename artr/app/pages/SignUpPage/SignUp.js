@@ -6,9 +6,10 @@ import SignUp1 from './SignUp1';
 import SignUp2 from './SignUp2';
 import SignUp3 from './SignUp3';
 import SignUp4 from './SignUp4';
+import SignUp5 from './SignUp5';
 import NewArtistProfile from './NewArtistProfile';
 
-const steps = ['Account Type', 'Personal Information', 'Artr Account', 'Terms & Services', 'Start'];
+const steps = ['Account Type', 'Personal Information', 'Artr Account', 'Terms & Services', 'Creation'];
 
 function SignUp() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -20,7 +21,7 @@ function SignUp() {
       return;
     }
 
-    setCurrentStep((prevStep) => Math.min(prevStep + 1, 5));
+    setCurrentStep((prevStep) => Math.min(prevStep + 1, 6));
   };
 
 
@@ -39,11 +40,13 @@ function SignUp() {
 
         {currentStep === 4 && <SignUp4 isChecked={isChecked} setCheckBox={setCheckBox} />}
 
-        {currentStep === 5 && <NewArtistProfile />}
+        {currentStep === 5 && <SignUp5 />}
+
+        {currentStep === 6 && <NewArtistProfile />}
         
       </div>
       <div className='flex mt-14 poppins-reg'>
-        {currentStep < 4 && (
+        {currentStep <= 4 && (
           <div>
             <button className='underline text-customPurple text-sm mr-6'>
               Cancel
@@ -54,13 +57,13 @@ function SignUp() {
           </div>
         )}
 
-        {currentStep === 4 && (
+        {currentStep === 5 && (
           <div>
             <button className='underline text-customPurple text-sm mr-6'>
               Cancel
             </button>
-            <button className='text-sm bg-customPurple text-white rounded-xl w-16 h-6 ml-6 shadow-lightPurple' onClick={handleNext}>
-              Start
+            <button className='text-sm bg-customPurple text-white rounded-xl w-16 h-6 ml-6' onClick={handleNext}>
+              Submit
             </button>
           </div>
         )}
