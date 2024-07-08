@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProgressBar = ({ currentStep, steps }) => {
   return (
-    <div className="flex justify-between items-center w-11/12 md:w-9/12 mb-6">
+    <div className="flex justify-between items-center w-11/12 mb-6">
       {steps.map((step, index) => (
         <div key={index} className="flex flex-col items-center relative w-full">
           <div
