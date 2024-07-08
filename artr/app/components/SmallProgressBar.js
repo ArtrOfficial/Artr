@@ -18,32 +18,28 @@ function SmallProgressBar({ currentStep, steps }) {
               </div>
               {index === 0 && (
                 <div
-                  className={`absolute top-4 h-0.5 w-full
-                    ${currentStep > index + 1 ? 'bg-lilac' : 'bg-gray'}`}
+                  className={`absolute top-4 h-0.5 w-full bg-lilac`}
                   style={{ left: 'calc(50% + 1rem)' }}
                 />
               )}
 
               {(index > 0 && index < steps.length - 1) && (
                 <div
-                  className={`absolute top-4 h-0.5 w-full
-                    ${currentStep > index + 1 ? 'bg-lilac' : 'bg-gray'}`}
+                  className={`absolute top-4 h-0.5 w-full bg-lilac`}
                   style={{ left: 'calc(50% + 1rem)' }}
                 />
               )}
 
               {(index > 0 && index < steps.length - 1) && (
                 <div
-                  className={`absolute top-4 h-0.5 w-full
-                    ${currentStep > index + 1 ? 'bg-lilac' : 'bg-gray'}`}
+                  className={`absolute top-4 h-0.5 w-full bg-lilac`}
                   style={{ right: 'calc(50% + 1rem)' }}
                 />
               )}
 
               {index === steps.length - 1 && (
                 <div
-                  className={`absolute top-4 h-0.5 w-full
-                    ${currentStep > index + 1 ? 'bg-lilac' : 'bg-gray'}`}
+                  className={`absolute top-4 h-0.5 w-full bg-lilac`}
                   style={{ right: 'calc(50% + 1rem)' }}
                 />
               )}
