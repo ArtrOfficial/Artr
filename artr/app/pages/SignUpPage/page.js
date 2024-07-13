@@ -3,7 +3,7 @@ import SignUp from "./SignUp";
 import Footer from "@/app/components/Footer";
 
 export default function Page() {
-  return(
+  return (
     <>
       <SignUp />
       <Footer />
